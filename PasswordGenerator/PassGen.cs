@@ -105,7 +105,7 @@ namespace PasswordGenerator
             else
             {
                 tempLength = passLength / 2;
-                //ldjf;dsafldjf;lads
+                //
             }
         }
 
