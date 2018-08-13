@@ -1,6 +1,6 @@
 # GenPass Beta
 
-Created during my Junior year of High School
+A High School Pet Project
 
 This program's intent is to randomly generate a password using the random function within the .NET Framework. Future goals include adding encryption so that passwords can later be saved to text files.
 
