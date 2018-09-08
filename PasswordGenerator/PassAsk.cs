@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PasswordGenerator
@@ -25,23 +18,34 @@ namespace PasswordGenerator
             bool good = true;
             string sendLength = "";
 
-            sendLength = lengthText.Text;
-            try
+            if ((basicRadio.Checked == false) && (advancedRadio.Checked == false))
             {
-                goodNess = int.Parse(sendLength);
-            }
-            catch
-            {
-                MessageBox.Show("Please enter an actual number value into the text box", "Bad Data",
+                MessageBox.Show("Please check either \"Basic\" or \"Advanced\" as an option", "Error",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 good = false;
             }
-            if ((goodNess > 255) || (goodNess < 8))
+            else
             {
-                MessageBox.Show("Please enter a number between 8 and 255", "Too Short/Too Long",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
-                good = false;
+                sendLength = lengthText.Text;
+                try
+                {
+                    goodNess = int.Parse(sendLength);
+
+                    if (goodNess > 255)
+                    {
+                        MessageBox.Show("Please enter a number less than 255", "Error",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        good = false;
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show("Please enter a number into the text box", "Error",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    good = false;
+                }
             }
+
             if (good)
             {
                 this.Close();
