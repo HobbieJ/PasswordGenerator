@@ -1,7 +1,7 @@
 # Simple Password Generator
 
 [![Donate](https://img.shields.io/badge/Donate-Square%20Cash-brightgreen.svg?style=for-the-badge)](https://cash.me/$HobbieJ)
-[![GitHub license](https://img.shields.io/github/license/HobbieJ/PasswordGenerator.svg?longCache=true&style=for-the-badge)](https://github.com/HobbieJ/PasswordGenerator/blob/master/LICENSE.txt)
+[![GitHub license](https://img.shields.io/github/license/HobbieJ/PasswordGenerator.svg?longCache=true&style=for-the-badge)](https://github.com/HobbieJ/PasswordGenerator/blob/master/LICENSE)
 
 An amazingly user friendly password generator!
 
