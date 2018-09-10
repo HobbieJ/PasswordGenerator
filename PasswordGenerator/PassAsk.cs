@@ -31,9 +31,9 @@ namespace PasswordGenerator
                 {
                     goodNess = int.Parse(sendLength);
 
-                    if (goodNess > 255)
+                    if ((goodNess > 255) || (goodNess < 1))
                     {
-                        MessageBox.Show("Please enter a number less than 255", "Error",
+                        MessageBox.Show("Please enter a number greater than 0 and less than 256", "Error",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
                         good = false;
                     }

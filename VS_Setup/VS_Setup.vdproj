@@ -88,6 +88,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
             }
         }
     }
@@ -194,15 +202,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Simple Password Generator"
-        "ProductCode" = "8:{8225F800-E5CF-4C51-A4FA-34BDA8FC374A}"
-        "PackageCode" = "8:{E82ED832-CD96-4E9D-8247-D14A55716E7A}"
+        "ProductCode" = "8:{D756BE2F-B13D-498D-ADDD-F9498351261E}"
+        "PackageCode" = "8:{DAFE6C5D-B11B-4F89-85CF-0C7AA9847124}"
         "UpgradeCode" = "8:{1C4D394A-018D-404E-A5FE-5C9F0567D9A5}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.0"
+        "ProductVersion" = "8:1.1.1"
         "Manufacturer" = "8:Jacob Hobbie"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:https://github.com/HobbieJ/PasswordGenerator/issues"
@@ -786,7 +794,7 @@
             }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_CEC20D2B394B4BB38593C1F950D147EA"
             {
-            "SourcePath" = "8:..\\PasswordGenerator\\obj\\Debug\\PasswordGenerator.exe"
+            "SourcePath" = "8:..\\PasswordGenerator\\obj\\Release\\PasswordGenerator.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_CBB17293FE6F4A01A5DF27D4A70351B8"
