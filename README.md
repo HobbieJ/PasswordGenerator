@@ -7,7 +7,7 @@ An amazingly user friendly password generator!
 
 This program was first made as a fun project I kept up in High School. I occasionally add new features to it, but it's not in active development.
 
-**NOTE: This is a pet project I made to practice using C# in High School. I strongly recommend you use a full password manager to save your passwords in an encrypted file, so that you don't have to remember them, and they are safe. My password manager of choice is [1Password](https://1password.com/), however if you're looking for a free and open source solution, [KeePass](https://keepass.info/) is an amazing solution.
+**NOTE: This is a pet project I made to practice using C# in High School. I strongly recommend you use a full password manager to save your passwords in an encrypted file, so that you don't have to remember them, and they are safe. My password manager of choice is [1Password](https://1password.com/), however if you're looking for a free and open source solution, [KeePass](https://keepass.info/) is an amazing solution.**
 
 ## Installation
 **NOTE:** This requires the .NET Framework to run. If you use the [installer](https://github.com/HobbieJ/PasswordGenerator/releases), it will automatically install!
