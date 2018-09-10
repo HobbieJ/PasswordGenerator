@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PassAsk));
             this.questLab = new System.Windows.Forms.Label();
             this.submitLength = new System.Windows.Forms.Button();
             this.lengthText = new System.Windows.Forms.TextBox();
@@ -40,17 +41,19 @@
             // questLab
             // 
             this.questLab.AutoSize = true;
-            this.questLab.Location = new System.Drawing.Point(12, 9);
+            this.questLab.Location = new System.Drawing.Point(16, 11);
+            this.questLab.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.questLab.Name = "questLab";
-            this.questLab.Size = new System.Drawing.Size(217, 13);
+            this.questLab.Size = new System.Drawing.Size(286, 17);
             this.questLab.TabIndex = 0;
             this.questLab.Text = "How long do you want your password to be?";
             // 
             // submitLength
             // 
-            this.submitLength.Location = new System.Drawing.Point(165, 31);
+            this.submitLength.Location = new System.Drawing.Point(220, 38);
+            this.submitLength.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.submitLength.Name = "submitLength";
-            this.submitLength.Size = new System.Drawing.Size(96, 20);
+            this.submitLength.Size = new System.Drawing.Size(128, 25);
             this.submitLength.TabIndex = 2;
             this.submitLength.Text = "Submit";
             this.submitLength.UseVisualStyleBackColor = true;
@@ -59,10 +62,11 @@
             // lengthText
             // 
             this.lengthText.AllowDrop = true;
-            this.lengthText.Location = new System.Drawing.Point(12, 32);
+            this.lengthText.Location = new System.Drawing.Point(16, 39);
+            this.lengthText.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lengthText.MaxLength = 3;
             this.lengthText.Name = "lengthText";
-            this.lengthText.Size = new System.Drawing.Size(149, 20);
+            this.lengthText.Size = new System.Drawing.Size(197, 22);
             this.lengthText.TabIndex = 1;
             this.lengthText.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -71,17 +75,19 @@
             this.radioGroup.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.radioGroup.Controls.Add(this.advancedRadio);
             this.radioGroup.Controls.Add(this.basicRadio);
-            this.radioGroup.Location = new System.Drawing.Point(12, 60);
+            this.radioGroup.Location = new System.Drawing.Point(16, 74);
+            this.radioGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioGroup.Name = "radioGroup";
-            this.radioGroup.Size = new System.Drawing.Size(249, 45);
+            this.radioGroup.Size = new System.Drawing.Size(331, 55);
             this.radioGroup.TabIndex = 3;
             // 
             // advancedRadio
             // 
             this.advancedRadio.AutoSize = true;
-            this.advancedRadio.Location = new System.Drawing.Point(128, 13);
+            this.advancedRadio.Location = new System.Drawing.Point(171, 16);
+            this.advancedRadio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.advancedRadio.Name = "advancedRadio";
-            this.advancedRadio.Size = new System.Drawing.Size(74, 17);
+            this.advancedRadio.Size = new System.Drawing.Size(92, 21);
             this.advancedRadio.TabIndex = 4;
             this.advancedRadio.Text = "Advanced";
             this.advancedRadio.UseVisualStyleBackColor = true;
@@ -90,9 +96,10 @@
             // basicRadio
             // 
             this.basicRadio.AutoSize = true;
-            this.basicRadio.Location = new System.Drawing.Point(28, 13);
+            this.basicRadio.Location = new System.Drawing.Point(37, 16);
+            this.basicRadio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.basicRadio.Name = "basicRadio";
-            this.basicRadio.Size = new System.Drawing.Size(58, 17);
+            this.basicRadio.Size = new System.Drawing.Size(74, 21);
             this.basicRadio.TabIndex = 3;
             this.basicRadio.Text = "Normal";
             this.basicRadio.UseVisualStyleBackColor = true;
@@ -101,14 +108,16 @@
             // PassAsk
             // 
             this.AcceptButton = this.submitLength;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(269, 116);
+            this.ClientSize = new System.Drawing.Size(359, 143);
             this.Controls.Add(this.radioGroup);
             this.Controls.Add(this.lengthText);
             this.Controls.Add(this.submitLength);
             this.Controls.Add(this.questLab);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "PassAsk";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
