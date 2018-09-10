@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PassGen));
             this.finalPass = new System.Windows.Forms.TextBox();
             this.findPass = new System.Windows.Forms.Button();
             this.clipCopy = new System.Windows.Forms.Button();
@@ -37,20 +38,22 @@
             // finalPass
             // 
             this.finalPass.Cursor = System.Windows.Forms.Cursors.Default;
-            this.finalPass.Location = new System.Drawing.Point(12, 12);
+            this.finalPass.Location = new System.Drawing.Point(16, 15);
+            this.finalPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.finalPass.MaxLength = 255;
             this.finalPass.Name = "finalPass";
             this.finalPass.ReadOnly = true;
-            this.finalPass.Size = new System.Drawing.Size(384, 20);
+            this.finalPass.Size = new System.Drawing.Size(511, 22);
             this.finalPass.TabIndex = 5;
             this.finalPass.TabStop = false;
             this.finalPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // findPass
             // 
-            this.findPass.Location = new System.Drawing.Point(12, 48);
+            this.findPass.Location = new System.Drawing.Point(16, 59);
+            this.findPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.findPass.Name = "findPass";
-            this.findPass.Size = new System.Drawing.Size(116, 44);
+            this.findPass.Size = new System.Drawing.Size(155, 54);
             this.findPass.TabIndex = 1;
             this.findPass.Text = "Generate";
             this.findPass.UseVisualStyleBackColor = true;
@@ -58,9 +61,10 @@
             // 
             // clipCopy
             // 
-            this.clipCopy.Location = new System.Drawing.Point(146, 48);
+            this.clipCopy.Location = new System.Drawing.Point(195, 59);
+            this.clipCopy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.clipCopy.Name = "clipCopy";
-            this.clipCopy.Size = new System.Drawing.Size(116, 44);
+            this.clipCopy.Size = new System.Drawing.Size(155, 54);
             this.clipCopy.TabIndex = 3;
             this.clipCopy.Text = "Copy to Clipboard";
             this.clipCopy.UseVisualStyleBackColor = true;
@@ -68,9 +72,10 @@
             // 
             // btnAbout
             // 
-            this.btnAbout.Location = new System.Drawing.Point(280, 48);
+            this.btnAbout.Location = new System.Drawing.Point(373, 59);
+            this.btnAbout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAbout.Name = "btnAbout";
-            this.btnAbout.Size = new System.Drawing.Size(116, 44);
+            this.btnAbout.Size = new System.Drawing.Size(155, 54);
             this.btnAbout.TabIndex = 2;
             this.btnAbout.Text = "About";
             this.btnAbout.UseVisualStyleBackColor = true;
@@ -79,14 +84,16 @@
             // PassGen
             // 
             this.AcceptButton = this.findPass;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(408, 104);
+            this.ClientSize = new System.Drawing.Size(544, 128);
             this.Controls.Add(this.btnAbout);
             this.Controls.Add(this.clipCopy);
             this.Controls.Add(this.findPass);
             this.Controls.Add(this.finalPass);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "PassGen";
