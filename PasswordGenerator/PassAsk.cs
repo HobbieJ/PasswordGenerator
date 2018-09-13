@@ -15,40 +15,32 @@ namespace PasswordGenerator
 
         private void submitLength_Click(object sender, EventArgs e)
         {
-            bool good = true;
-            string sendLength = "";
+            bool good = false;
+            string sendLength = lengthText.Text;
 
-            if ((basicRadio.Checked == false) && (advancedRadio.Checked == false))
+            try
             {
-                MessageBox.Show("Please check either \"Basic\" or \"Advanced\" as an option", "Error",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
-                good = false;
-            }
-            else
-            {
-                sendLength = lengthText.Text;
-                try
-                {
-                    goodNess = int.Parse(sendLength);
+                goodNess = int.Parse(sendLength);
 
-                    if ((goodNess > 255) || (goodNess < 1))
-                    {
-                        MessageBox.Show("Please enter a number greater than 0 and less than 256", "Error",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        good = false;
-                    }
-                }
-                catch
+                if ((goodNess > 255) || (goodNess < 1))
                 {
-                    MessageBox.Show("Please enter a number into the text box", "Error",
+                    MessageBox.Show("Please enter a number greater than 0 and less than 256", "Error",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                     good = false;
+                    goodNess = 0;
                 }
+            }
+            catch
+            {
+                MessageBox.Show("Please enter a number into the text box", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                good = false;
+                goodNess = 0;
             }
 
             if (good)
             {
-                this.Close();
+                Close();
             } 
         }
 

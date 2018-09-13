@@ -51,7 +51,7 @@
             // submitLength
             // 
             this.submitLength.Location = new System.Drawing.Point(220, 38);
-            this.submitLength.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.submitLength.Margin = new System.Windows.Forms.Padding(4);
             this.submitLength.Name = "submitLength";
             this.submitLength.Size = new System.Drawing.Size(128, 25);
             this.submitLength.TabIndex = 2;
@@ -63,7 +63,7 @@
             // 
             this.lengthText.AllowDrop = true;
             this.lengthText.Location = new System.Drawing.Point(16, 39);
-            this.lengthText.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lengthText.Margin = new System.Windows.Forms.Padding(4);
             this.lengthText.MaxLength = 3;
             this.lengthText.Name = "lengthText";
             this.lengthText.Size = new System.Drawing.Size(197, 22);
@@ -76,7 +76,7 @@
             this.radioGroup.Controls.Add(this.advancedRadio);
             this.radioGroup.Controls.Add(this.basicRadio);
             this.radioGroup.Location = new System.Drawing.Point(16, 74);
-            this.radioGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioGroup.Margin = new System.Windows.Forms.Padding(4);
             this.radioGroup.Name = "radioGroup";
             this.radioGroup.Size = new System.Drawing.Size(331, 55);
             this.radioGroup.TabIndex = 3;
@@ -85,7 +85,7 @@
             // 
             this.advancedRadio.AutoSize = true;
             this.advancedRadio.Location = new System.Drawing.Point(171, 16);
-            this.advancedRadio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.advancedRadio.Margin = new System.Windows.Forms.Padding(4);
             this.advancedRadio.Name = "advancedRadio";
             this.advancedRadio.Size = new System.Drawing.Size(92, 21);
             this.advancedRadio.TabIndex = 4;
@@ -96,11 +96,13 @@
             // basicRadio
             // 
             this.basicRadio.AutoSize = true;
+            this.basicRadio.Checked = true;
             this.basicRadio.Location = new System.Drawing.Point(37, 16);
-            this.basicRadio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.basicRadio.Margin = new System.Windows.Forms.Padding(4);
             this.basicRadio.Name = "basicRadio";
             this.basicRadio.Size = new System.Drawing.Size(74, 21);
             this.basicRadio.TabIndex = 3;
+            this.basicRadio.TabStop = true;
             this.basicRadio.Text = "Normal";
             this.basicRadio.UseVisualStyleBackColor = true;
             this.basicRadio.CheckedChanged += new System.EventHandler(this.RadioChecker);
@@ -117,7 +119,7 @@
             this.Controls.Add(this.questLab);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "PassAsk";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
