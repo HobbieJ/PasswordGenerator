@@ -100,15 +100,18 @@ namespace PasswordGenerator
             newPass.ShowDialog();
             passLength = PassAsk.goodNess;
 
-            char[] daSet = new char[passLength];
+            if (passLength != 0)
+            {
+                char[] daSet = new char[passLength];
 
-            if (PassAsk.basicOr)
-            {
-                BasicPass(aChar, thePass, daSet, theChar);
-            }
-            else
-            {
-                AdvancedPass(aChar, thePass, daSet, theChar);
+                if (PassAsk.basicOr)
+                {
+                    BasicPass(aChar, thePass, daSet, theChar);
+                }
+                else
+                {
+                    AdvancedPass(aChar, thePass, daSet, theChar);
+                } 
             }
         }
 
